@@ -12,7 +12,7 @@ A smart [nvalt](http://brettterpstra.com/projects/nvalt/) Preview Theme.
 - simple checkbox support ([] and [/])
 - code highlighting
 - User Story detection (As a user, I expect ...)
-
+- LaTex-style math support through Mathjax
 ![screenshot](https://cloud.githubusercontent.com/assets/7358/2734135/1856cee4-c650-11e3-85ca-198179647c8e.png "Screenshot")
 
 ### Requirements
@@ -81,3 +81,9 @@ There are two types of checkboxes you can use:
 ### Github Markdown Theme
 
     strikethrough: wrap text with ~~
+
+### Mathjax
+    
+    $$
+    \sum_{x=1}_\infty \frac{1}{x} = 1
+    $$
