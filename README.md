@@ -15,6 +15,17 @@ A smart [nvalt](http://brettterpstra.com/projects/nvalt/) Preview Theme.
 - LaTex-style math support through Mathjax
 ![screenshot](https://cloud.githubusercontent.com/assets/7358/2734135/1856cee4-c650-11e3-85ca-198179647c8e.png "Screenshot")
 
+### Tips
+* This extensions of *nvALT prime* has been compiled to include support for code highlighting in some extra languages such as Rust, Clojure, Swift, ... You might want to get a customised version of *highlightjs* that includes support for your favorite languages. You can configure and download such a version from their [website](https://highlightjs.org/download/) and then substitute the "vanilla" library that bower imports for your custom one. Assuming you have downloaded the *highlightjs.zip* file to the `~/Downloads` folder, you can write
+
+```
+bower install
+rm -rf bower_components/highlightjs/
+mkdir bower_components/highlightjs
+unzip ~/Downloads/highlightjs.zip -d bower_components/highlightjs
+gulp
+```
+
 ### Requirements
 
 [nvalt](http://brettterpstra.com/projects/nvalt/) - nvALT is a fork of the original Notational Velocity with some additional features and some interface modifications.
