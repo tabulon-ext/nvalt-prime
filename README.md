@@ -97,10 +97,25 @@ There are two types of checkboxes you can use:
     strikethrough: wrap text with ~~
 
 ### Mathjax
+
+For display mode, math formulae in [LaTeX notation](https://en.wikibooks.org/wiki/LaTeX/Mathematics#Sums_and_integrals) can be enclosed by `\\(` and  `\\)` or `\\[` `\\]`. For inline mode, it can be enclosed by `$$` and `$$`.
+For example, the following code will display the quadratic equation in the same line as the text, but the two expressions for its solution on separate lines.
+
+    The solutions of 
+    $$ ax^2 + bx + c = 0 $$ 
+    are
+    \\( 
+    x=\frac{-b + \sqrt{b^2-4ac\ }}{2a}.  
+    \\)
+    and
+    \\[
+    x=\frac{-b - \sqrt{b^2-4ac\ }}{2a}.  
+    \\]
+
     
-    $$
-    \sum_{x=1}_\infty \frac{1}{x} = 1
-    $$
+    \\[
+    \sum_{x=1}^\infty \frac{1}{x} = 1
+    \\]
 
 ## Sortable tables
 
