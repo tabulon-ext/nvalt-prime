@@ -14,6 +14,7 @@ A smart [nvalt](http://brettterpstra.com/projects/nvalt/) Preview Theme.
 - User Story detection (As a user, I expect ...)
 - LaTex-style math support through Mathjax
 - Hyperlinks to other notes
+- Sort table rows by click on column headers (using Stuart Langridge's [sorttable.js](http://www.kryogenix.org/code/browser/sorttable/))
 ![screenshot](screenshot.png "Screenshot")
 
 ### Tips
@@ -99,3 +100,13 @@ There are two types of checkboxes you can use:
     $$
     \sum_{x=1}_\infty \frac{1}{x} = 1
     $$
+
+## Sortable tables
+
+Tables are automatically sortable: just click on the title to sort in ascending order, then click again to toggle between ascending and descending.
+
+|Name|Country|Height|
+|----|-------|----------|
+|Tom|England| 1.9m|
+|Bob|Scotland|2.0m|
+|Sam|Ireland|1.8m|
