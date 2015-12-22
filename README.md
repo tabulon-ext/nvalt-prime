@@ -15,6 +15,7 @@ A smart [nvalt](http://brettterpstra.com/projects/nvalt/) Preview Theme.
 - LaTex-style math support through Mathjax
 - Hyperlinks to other notes
 - Sort table rows by click on column headers (using Stuart Langridge's [sorttable.js](http://www.kryogenix.org/code/browser/sorttable/))
+- footnotes appear in-place, rendered with [bigfoot.js](http://www.bigfootjs.com/)
 ![screenshot](screenshot.png "Screenshot")
 
 ### Tips
@@ -110,3 +111,12 @@ Tables are automatically sortable: just click on the title to sort in ascending 
 |Tom|England| 1.9m|
 |Bob|Scotland|2.0m|
 |Sam|Ireland|1.8m|
+
+## Footnotes
+Footnotes are rendered using [bigfoot.js](http://www.bigfootjs.com/), so that they appear as easy-to-click buttons [^firstfootnote]; when the reader clicks on these, a popover appears.  This means the reader can read the note in-place, without jumping around the page [^secondfootnote]. 
+
+When printed, the buttons are replaced by the more traditional numbers *in-situ* cross referencing the full text of the notes at the end of the document. This means the notes can still be read without interactivity.
+
+[^firstfootnote]: Rather than as a number.
+
+[^secondfootnote]: and, hopefully, be less distracted.

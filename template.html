@@ -65,6 +65,8 @@
     s.onload = function(){
       sorttable.init();
       Array.prototype.slice.call(document.getElementsByTagName('table')).forEach(function(t){ sorttable.makeSortable(t); })
+
+      $.bigfoot();
     };
 
     document.getElementsByTagName('head')[0].appendChild(s);
