@@ -8,7 +8,8 @@ var BOWER_DIR = 'bower_components/';
 
 var csslibs = [
   BOWER_DIR + 'font-awesome/css/font-awesome.css',
-  BOWER_DIR + 'highlightjs/styles/github.css'
+  BOWER_DIR + 'highlightjs/styles/github.css',
+  APP_DIR   + 'bigfoot/bigfoot-default.css'
 ];
 
 var scripts = [

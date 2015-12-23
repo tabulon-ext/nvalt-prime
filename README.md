@@ -14,6 +14,8 @@ A smart [nvalt](http://brettterpstra.com/projects/nvalt/) Preview Theme.
 - User Story detection (As a user, I expect ...)
 - LaTex-style math support through Mathjax
 - Hyperlinks to other notes
+- Sort table rows by click on column headers (using Stuart Langridge's [sorttable.js](http://www.kryogenix.org/code/browser/sorttable/))
+- footnotes appear in-place, rendered with [bigfoot.js](http://www.bigfootjs.com/)
 ![screenshot](screenshot.png "Screenshot")
 
 ### Tips
@@ -95,7 +97,41 @@ There are two types of checkboxes you can use:
     strikethrough: wrap text with ~~
 
 ### Mathjax
+
+For display mode, math formulae in [LaTeX notation](https://en.wikibooks.org/wiki/LaTeX/Mathematics#Sums_and_integrals) can be enclosed by `\\(` and  `\\)` or `\\[` `\\]`. For inline mode, it can be enclosed by `$$` and `$$`.
+For example, the following code will display the quadratic equation in the same line as the text, but the two expressions for its solution on separate lines.
+
+    The solutions of 
+    $$ ax^2 + bx + c = 0 $$ 
+    are
+    \\( 
+    x=\frac{-b + \sqrt{b^2-4ac\ }}{2a}.  
+    \\)
+    and
+    \\[
+    x=\frac{-b - \sqrt{b^2-4ac\ }}{2a}.  
+    \\]
+
     
-    $$
-    \sum_{x=1}_\infty \frac{1}{x} = 1
-    $$
+    \\[
+    \sum_{x=1}^\infty \frac{1}{x} = 1
+    \\]
+
+## Sortable tables
+
+Tables are automatically sortable: just click on the title to sort in ascending order, then click again to toggle between ascending and descending.
+
+|Name|Country|Height|
+|----|-------|----------|
+|Tom|England| 1.9m|
+|Bob|Scotland|2.0m|
+|Sam|Ireland|1.8m|
+
+## Footnotes
+Footnotes are rendered using [bigfoot.js](http://www.bigfootjs.com/), so that they appear as easy-to-click buttons [^firstfootnote]; when the reader clicks on these, a popover appears.  This means the reader can read the note in-place, without jumping around the page [^secondfootnote]. 
+
+When printed, the buttons are replaced by the more traditional numbers *in-situ* cross referencing the full text of the notes at the end of the document. This means the notes can still be read without interactivity.
+
+[^firstfootnote]: Rather than as a number.
+
+[^secondfootnote]: and, hopefully, be less distracted.
