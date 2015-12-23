@@ -56,11 +56,11 @@
     s.src = 'file://{%support%}/dist/app.js';
 
     s.onload = function(){
-      sorttable.init();
-      Array.prototype.slice.call(document.getElementsByTagName('table')).forEach(function(t){ sorttable.makeSortable(t); })
-
       var container = document.getElementById("wrapper");
       container.innerHTML = container.innerHTML.replace(/\[\[(.*?)\]\]/g,"<a href='nvalt://find/$1'>$1</a>");
+
+      sorttable.init();
+      Array.prototype.slice.call(document.getElementsByTagName('table')).forEach(function(t){ sorttable.makeSortable(t); })
 
       $.bigfoot();
     };
