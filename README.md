@@ -39,9 +39,9 @@ In a terminal:
 
     cd ~/Library/Application\ Support/
     rm -rfi nvALT/
-    git clone https://github.com/bawigga/nvalt-prime.git nvALT
+    git clone --recursive https://github.com/dg2/nvalt-prime.git nvALT
 
-> No need to restart nvALT. The changes will be picked up the next time you switch notes. You can also right click on the preview window and click refresh.
+> No need to restart nvALT. The changes will be picked up the next time you switch notes. You can also right click on the preview window and click refresh. The recursive clone is required to include Mathjax
 
 
 
