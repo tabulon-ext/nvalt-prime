@@ -19,6 +19,21 @@ A smart [nvalt](http://brettterpstra.com/projects/nvalt/) Preview Theme.
 ![screenshot](screenshot.png "Screenshot")
 
 ### Tips
+
+#### NOTE [TAU]:
+
+Instead of what is described below, I just did what is recommended as of today (Dec 2018) on  [highlight.js the website](https://highlightjs.org/download/) :
+
+    npm -g install highlight.js
+
+It seems to be working fine (for the languages I use, at least), without needing to compile or build via bower/gulp. 
+But I can't really be sure... It might be just a coincidence that the original highlight.js in the **nvalt-prime**
+happened to include some of the less popular languages that I have tried just to see (such as VBScript).
+
+Anyhow, below are the original instructions that involve a build step from the original author...
+
+----------
+
 * This extensions of *nvALT prime* has been compiled to include support for code highlighting in some extra languages such as Rust, Clojure, Swift, ... You might want to get a customised version of *highlightjs* that includes support for your favorite languages. You can configure and download such a version from their [website](https://highlightjs.org/download/) and then substitute the "vanilla" library that bower imports for your custom one. Assuming you have downloaded the *highlightjs.zip* file to the `~/Downloads` folder, you can write
 
 ```
